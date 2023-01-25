@@ -1,14 +1,9 @@
 <template>
   <div>
-    <Logos mb-6 />
-    <Suspense>
-      <PageView />
-      <template #fallback>
-        <div op50 italic>
-          <span animate-pulse>Loading...</span>
-        </div>
-      </template>
-    </Suspense>
-    <InputEntry />
+    <div class="op75 italic">
+      <DarkToggle />
+      <br class="my-8" />
+      <span class="animate-pulse">Welcome!</span>
+    </div>
   </div>
 </template>
