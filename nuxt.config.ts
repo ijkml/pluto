@@ -1,4 +1,4 @@
-import { fileURLToPath } from 'url';
+import { fileURLToPath } from 'node:url';
 import svgLoader from 'vite-svg-loader';
 
 export default defineNuxtConfig({
@@ -58,6 +58,6 @@ export default defineNuxtConfig({
     },
   },
   devtools: {
-    enabled: false
+    enabled: false,
   },
 });
