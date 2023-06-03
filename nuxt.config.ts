@@ -2,6 +2,10 @@ import { fileURLToPath } from 'url';
 import svgLoader from 'vite-svg-loader';
 
 export default defineNuxtConfig({
+  devServer: {
+    host: '',
+    port: 3221,
+  },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
@@ -22,12 +26,11 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@unocss/nuxt',
     '@nuxtjs/color-mode',
-    '@nuxtjs/critters',
-    'vite-plugin-vue-type-imports/nuxt',
+    'nuxt-beastcss',
   ],
   experimental: {
-    reactivityTransform: false,
-    inlineSSRStyles: false,
+    // inlineSSRStyles: false,
+    typedPages: true,
   },
   vite: {
     css: {
@@ -43,8 +46,18 @@ export default defineNuxtConfig({
       }),
     ],
   },
-  css: ['@unocss/reset/tailwind.css'],
+  css: ['@unocss/reset/tailwind.css', '@/assets/styles/root.scss'],
   colorMode: {
     classSuffix: '',
+  },
+  typescript: {
+    tsConfig: {
+      compilerOptions: {
+        moduleResolution: 'bundler',
+      },
+    },
+  },
+  devtools: {
+    enabled: false
   },
 });
