@@ -1,1 +1,3 @@
-# Nuxt 3 Starter (Vitesse Mod)
+# Nuxt Flint
+
+A Vitesse fork/mod

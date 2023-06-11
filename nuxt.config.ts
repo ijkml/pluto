@@ -14,7 +14,7 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en-US',
       },
-      meta: [{ name: 'description', content: 'Vitesse Nuxt Starter (mod)' }],
+      meta: [{ name: 'description', content: 'Nuxt Flint' }],
     },
   },
   alias: {
