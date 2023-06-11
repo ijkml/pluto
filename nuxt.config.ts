@@ -22,12 +22,7 @@ export default defineNuxtConfig({
     // '@icons': fileURLToPath(new URL('./assets/icons', import.meta.url)),
     // '@data': fileURLToPath(new URL('./assets/data', import.meta.url)),
   },
-  modules: [
-    '@vueuse/nuxt',
-    '@unocss/nuxt',
-    '@nuxtjs/color-mode',
-    'nuxt-beastcss',
-  ],
+  modules: ['@vueuse/nuxt', '@unocss/nuxt', 'nuxt-beastcss'],
   experimental: {
     // inlineSSRStyles: false,
     typedPages: true,
@@ -47,9 +42,6 @@ export default defineNuxtConfig({
     ],
   },
   css: ['@unocss/reset/tailwind.css', '@/assets/styles/root.scss'],
-  colorMode: {
-    classSuffix: '',
-  },
   typescript: {
     tsConfig: {
       compilerOptions: {
