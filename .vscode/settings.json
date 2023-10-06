@@ -1,10 +1,33 @@
 {
+  "eslint.experimental.useFlatConfig": true,
   "prettier.enable": false,
+  "editor.formatOnSave": false,
+  "vue.codeActions.enabled": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
   },
-  "files.associations": {
-    "*.css": "postcss"
+  "stylelint.validate": [
+    "css",
+    "scss",
+    "sass",
+    "vue"
+  ],
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    ".nuxt": true,
   },
-  "editor.formatOnSave": false
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "/content/work/*.json"
+      ],
+      "url": "/types/work-schema.json"
+    }
+  ]
 }
