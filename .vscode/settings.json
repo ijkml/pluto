@@ -21,13 +21,6 @@
     "**/.DS_Store": true,
     "**/Thumbs.db": true,
     ".nuxt": true,
+    "node_modules": true,
   },
-  "json.schemas": [
-    {
-      "fileMatch": [
-        "/content/work/*.json"
-      ],
-      "url": "/types/work-schema.json"
-    }
-  ]
 }

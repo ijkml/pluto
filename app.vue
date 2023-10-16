@@ -1,23 +1,14 @@
 <script setup lang="ts">
+useHead({
+  titleTemplate: (titleChunk) => {
+    return titleChunk ? `ML – ${titleChunk}` : 'ML';
+  },
+});
 </script>
 
 <template>
-  <NuxtLayout>
+  <LayoutWrapper>
+    <NuxtLoadingIndicator />
     <NuxtPage />
-  </NuxtLayout>
+  </LayoutWrapper>
 </template>
-
-<style>
-html,
-body,
-#__nuxt {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-}
-
-html.dark {
-  background: #222;
-  color: white;
-}
-</style>
