@@ -7,12 +7,6 @@
     "source.fixAll.eslint": "explicit",
     "source.fixAll.stylelint": "explicit"
   },
-  "stylelint.validate": [
-    "css",
-    "scss",
-    "sass",
-    "vue"
-  ],
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,

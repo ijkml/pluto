@@ -2,10 +2,11 @@ import { fileURLToPath } from 'node:url';
 import svgLoader from 'vite-svg-loader';
 
 export default defineNuxtConfig({
-  devServer: {
-    host: '',
-    port: 3221,
+  srcDir: 'app',
+  experimental: {
+    typedPages: true,
   },
+  modules: ['@vueuse/nuxt', '@unocss/nuxt'],
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
@@ -18,14 +19,9 @@ export default defineNuxtConfig({
     },
   },
   alias: {
-    '@img': fileURLToPath(new URL('./assets/images', import.meta.url)),
+    '@img': fileURLToPath(new URL('./app/assets/images', import.meta.url)),
     // '@icons': fileURLToPath(new URL('./assets/icons', import.meta.url)),
     // '@data': fileURLToPath(new URL('./assets/data', import.meta.url)),
-  },
-  modules: ['@vueuse/nuxt', '@unocss/nuxt', 'nuxt-beastcss'],
-  experimental: {
-    // inlineSSRStyles: false,
-    typedPages: true,
   },
   vite: {
     css: {
@@ -48,5 +44,9 @@ export default defineNuxtConfig({
         moduleResolution: 'bundler',
       },
     },
+  },
+  devServer: {
+    host: '',
+    port: 3221,
   },
 });
