@@ -1,7 +1,7 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@9.4.0",
+  "packageManager": "pnpm@9.8.0",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -12,19 +12,18 @@
     "generate": "nuxt generate"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.21.2",
-    "@iconify-json/carbon": "^1.1.36",
-    "@iconify-json/ph": "^1.1.13",
-    "@types/node": "^20.14.9",
-    "@unocss/nuxt": "^0.61.0",
-    "@vueuse/nuxt": "^10.11.0",
-    "eslint": "^9.6.0",
+    "@antfu/eslint-config": "^2.27.0",
+    "@iconify-json/carbon": "^1.1.37",
+    "@types/node": "^22.5.0",
+    "@unocss/nuxt": "^0.62.2",
+    "@vueuse/nuxt": "^11.0.1",
+    "eslint": "^9.9.0",
     "eslint-plugin-format": "^0.1.2",
-    "nuxt": "^3.12.2",
-    "nuxt-umami": "^2.6.2",
-    "radix-vue": "^1.8.5",
-    "sass": "^1.77.6",
-    "typescript": "^5.5.2",
-    "vite-svg-loader": "^5.1.0"
+    "nuxt": "^3.12.4",
+    "nuxt-umami": "^2.6.4",
+    "sass": "^1.77.8",
+    "typescript": "^5.5.4",
+    "vite-svg-loader": "^5.1.0",
+    "vue-wrap-balancer": "^1.1.3"
   }
 }
