@@ -2,7 +2,7 @@ import { fileURLToPath } from 'node:url';
 import svgLoader from 'vite-svg-loader';
 
 export default defineNuxtConfig({
-  compatibilityDate: '2024-08-22',
+  compatibilityDate: '2024-10-01',
   future: {
     compatibilityVersion: 4,
   },
@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     componentIslands: true,
     headNext: true,
   },
-  modules: ['@vueuse/nuxt', '@unocss/nuxt'],
+  modules: ['@vueuse/nuxt', '@unocss/nuxt', 'nuxt-umami'],
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
@@ -35,6 +35,7 @@ export default defineNuxtConfig({
       preprocessorOptions: {
         scss: {
           additionalData: '@use "@/assets/styles/global.scss" as *;',
+          api: 'modern-compiler',
         },
       },
     },
