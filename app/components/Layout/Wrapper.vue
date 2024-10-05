@@ -1,6 +1,6 @@
 <template>
   <div class="page-layout" data-page-anchor>
-    <LayoutHeader />
+    <!-- <LayoutHeader /> -->
 
     <main>
       <slot />
@@ -8,7 +8,7 @@
 
     <!-- <LayoutCTA /> -->
     <!-- <LayoutNavBar /> -->
-    <LayoutFooter />
+    <!-- <LayoutFooter /> -->
   </div>
 </template>
 

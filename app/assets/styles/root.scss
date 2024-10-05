@@ -5,7 +5,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  @apply font-sans;
+  @apply font-sans bg-black/100;
 }
 
 @import "./app";

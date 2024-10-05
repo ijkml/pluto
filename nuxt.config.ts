@@ -14,7 +14,15 @@ export default defineNuxtConfig({
     componentIslands: true,
     headNext: true,
   },
-  modules: ['@vueuse/nuxt', '@unocss/nuxt', 'nuxt-umami'],
+  modules: [
+    '@vueuse/nuxt',
+    '@unocss/nuxt',
+    // 'nuxt-umami',
+    '@tresjs/nuxt',
+  ],
+  umami: {
+    enabled: false,
+  },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {

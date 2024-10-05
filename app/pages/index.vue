@@ -1,8 +1,26 @@
+<script setup lang="ts">
+import { OrbitControls } from '@tresjs/cientos';
+</script>
+
 <template>
   <div>
-    <div class="op75 italic">
-      <br class="my-8">
-      <span class="animate-pulse">Welcome!</span>
-    </div>
+    <TresCanvas window-size alpha shadows clear-color="black" class="cursor-grab">
+      <TresPerspectiveCamera
+        :position="[3, 3, 3]"
+        :look-at="[0, 0, 0]"
+      />
+
+      <Suspense>
+        <Planet />
+      </Suspense>
+
+      <TresHemisphereLight :intensity="0.7" />
+
+      <OrbitControls :enable-zoom="false" :enable-pan="false" />
+    </TresCanvas>
   </div>
 </template>
+
+<style scoped lang="scss">
+// ...
+</style>
