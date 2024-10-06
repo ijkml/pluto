@@ -1,14 +1,9 @@
 <script setup lang="ts">
 useHead({
-  titleTemplate: (titleChunk) => {
-    return titleChunk ? `ML – ${titleChunk}` : 'ML';
-  },
+  title: 'Pluto, with 🖤, ML',
 });
 </script>
 
 <template>
-  <LayoutWrapper>
-    <NuxtLoadingIndicator />
-    <NuxtPage />
-  </LayoutWrapper>
+  <NuxtPage />
 </template>

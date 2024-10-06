@@ -10,6 +10,10 @@ const { onBeforeRender } = useLoop();
 const planet = shallowRef();
 const galaxy = shallowRef();
 
+onMounted(() => {
+  nextTick(setReady);
+});
+
 onBeforeRender(() => {
   if (!planet.value || !galaxy.value)
     return;
@@ -26,7 +30,7 @@ onBeforeRender(() => {
     <TresMeshStandardMaterial :map="planetTexture" />
   </TresMesh>
   <TresMesh ref="galaxy">
-    <TresSphereGeometry :args="[4, 64, 64]" :scale="[1.2, 1.2, 1.2]" />
+    <TresSphereGeometry :args="[6, 64, 64]" />
     <TresMeshBasicMaterial :side="BackSide" :map="galaxyTexture" />
   </TresMesh>
 </template>
